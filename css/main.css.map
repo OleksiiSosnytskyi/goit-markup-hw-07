@@ -1,0 +1,22 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/utils/_variables.scss",
+        "../sass/utils/_base.scss",
+        "../sass/utils/_placeholder.scss",
+        "../sass/components/_nav.scss",
+        "../sass/components/_button.scss",
+        "../sass/components/_social.scss",
+        "../sass/components/_modal.scss",
+        "../sass/components/_form.scss",
+        "../sass/layouts/_header.scss",
+        "../sass/layouts/_container.scss",
+        "../sass/layouts/_sectoin.scss",
+        "../sass/layouts/_banner.scss",
+        "../sass/layouts/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
