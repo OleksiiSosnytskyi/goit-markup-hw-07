@@ -5,10 +5,7 @@
 .advantages-item:not(:last-child) {
   margin-right: 30px;
 }
-.advantages-list {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .advantages-item {
   justify-content: space-between;
   width: 270px;
@@ -43,6 +40,11 @@
   flex-wrap: wrap;
 }
 
+.team-info {
+  margin-bottom: 24px;
+  margin-top: 30px;
+}
+
 .directions-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -63,7 +65,4 @@
 }
 .clients-item:not(:last-child) {
   margin-right: 30px;
-}
-.footer-item:not(:last-child) {
-  margin-right: 10px;
 }

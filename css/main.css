@@ -181,7 +181,6 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   width: 270px;
-  margin-bottom: 24px;
 }
 
 .social-links-icon {
@@ -200,12 +199,6 @@ a {
   color: #afb1b8;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-links-icon .icon {
-  fill: currentColor;
-  width: 20px;
-  height: 20px;
 }
 
 .social-links-icon:hover,
@@ -243,40 +236,41 @@ a {
   height: 20px;
 }
 
+.social-links-icon .icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
 .footer-social-links:hover,
 .footer-social-links:focus {
   color: #ffffff;
   background-color: #2196f3;
 }
 
-.subscribe {
-  margin-left: auto;
-  margin-top: 72px;
-}
-
-.subscribe-form input {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  background-color: transparent;
-  width: 358px;
-  letter-spacing: 0.03em;
-  padding: 15px 16px;
-  margin-right: 12px;
-  color: rgba(255, 255, 255, 0.6);
+  max-width: 528px;
+  padding: 40px;
 }
 
-.subscribe-button::after {
-  content: '';
+.modal-title {
   display: inline-block;
-  vertical-align: middle;
-  background-image: url(../images/send.svg);
-  margin-left: 10px;
-  width: 24px;
-  height: 24px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+  color: #212121;
 }
 
 .checkbox-icon {
@@ -405,61 +399,8 @@ textarea {
   position: absolute;
 }
 
-.modal-title {
-  display: inline-block;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 30px;
-  color: #212121;
-}
-
 .form {
   text-align: center;
-}
-
-.develop {
-  display: inline-block;
-  margin-bottom: 21px;
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 12px;
-  line-height: 2;
-  text-align: center;
-}
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.modal {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background: #ffffff;
-  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  max-width: 528px;
-  padding: 40px;
 }
 
 .advantages-list {
@@ -472,14 +413,6 @@ textarea {
 
 .advantages-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.advantages-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .advantages-item {
@@ -525,6 +458,11 @@ textarea {
       flex-wrap: wrap;
 }
 
+.team-info {
+  margin-bottom: 24px;
+  margin-top: 30px;
+}
+
 .directions-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -554,10 +492,6 @@ textarea {
 
 .clients-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.footer-item:not(:last-child) {
-  margin-right: 10px;
 }
 
 .advantages-title {
@@ -604,6 +538,12 @@ textarea {
   text-transform: uppercase;
 }
 
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
 .advantages-icon {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -645,10 +585,6 @@ textarea {
   line-height: 1.2;
 }
 
-.team-image {
-  margin-bottom: 30px;
-}
-
 .projects-text {
   color: #ffffff;
   font-weight: 400;
@@ -675,7 +611,7 @@ textarea {
           transform: translateY(-100%);
 }
 
-.projects-thump {
+.projects-thumb {
   position: relative;
   overflow: hidden;
 }
@@ -846,6 +782,45 @@ textarea {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.subscribe {
+  margin-left: auto;
+  margin-top: 72px;
+}
+
+.subscribe-form input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: transparent;
+  width: 358px;
+  letter-spacing: 0.03em;
+  padding: 15px 16px;
+  margin-right: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-button::after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../images/send.svg);
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.develop {
+  display: inline-block;
+  margin-bottom: 21px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+}
+
 header {
   border: 1px solid #ececec;
 }
@@ -877,12 +852,6 @@ header {
 
 .directions {
   padding-top: 0;
-}
-
-.text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
 }
 
 .hero-title {
@@ -933,5 +902,28 @@ header {
 
 footer {
   background-color: #2f303a;
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*# sourceMappingURL=main.css.map */
