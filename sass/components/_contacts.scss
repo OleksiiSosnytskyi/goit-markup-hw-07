@@ -11,7 +11,7 @@
 }
 
 .contacts .contacts-link {
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 
   display: inline-flex;
   justify-content: center;
@@ -29,7 +29,7 @@
 
 .contacts .contacts-link:hover,
 .contacts .contacts-link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .address {
   margin-right: 70px;
@@ -39,12 +39,12 @@
 .address-kiev {
   display: inline-block;
   margin-bottom: 9px;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
   font-style: normal;
 }
 .footer-contacts:hover,
 .footer-contacts:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .footer-address {
   font-family: Roboto;

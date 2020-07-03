@@ -18,9 +18,9 @@
 
 .clients-link:hover,
 .clients-link:focus {
-  color: var(--accent-color);
-  background-color: var(--primary-white-color);
-  border: 1px solid var(--accent-color);
+  color: $accent-color;
+  background-color: $primary-white-color;
+  border: 1px solid $accent-color;
 }
 .footer-links {
   margin-top: 72px;

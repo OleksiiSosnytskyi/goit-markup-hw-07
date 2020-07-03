@@ -1,5 +1,5 @@
 .projects-text {
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 
   font-weight: 400;
   font-size: 18px;
@@ -33,7 +33,7 @@
 .projects-title {
   margin-bottom: 4px;
 
-  color: var(--title-text-color);
+  color: $title-text-color;
 
   font-weight: 700;
   font-size: 18px;
@@ -45,7 +45,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 .projects-item {
   width: 370px;
