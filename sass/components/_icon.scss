@@ -1,11 +1,9 @@
 .advantages-icon {
-  display: inline-flex;
+  @extend %inline-flex;
   width: 100%;
   height: 120px;
   box-sizing: border-box;
   border-radius: 4px;
-  justify-content: center;
-  align-items: center;
   background-color: $secondary-background-color;
   margin-bottom: 30px;
 }

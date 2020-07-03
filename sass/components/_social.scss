@@ -1,11 +1,12 @@
-.social-links {
+.socials {
   display: flex;
   justify-content: center;
 
   width: 270px;
 }
 
-.social-links-icon {
+.socials-icon,
+.footer-socials {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -16,46 +17,26 @@
   color: #afb1b8;
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-links-icon:hover,
-.social-links-icon:focus {
-  color: $primary-white-color;
-  background-color: $accent-color;
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+    background-color: $accent-color;
+  }
 }
-
-.social-links-item:not(:last-child) {
-  margin-right: 10px;
-}
-.footer-social-links {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+.footer-socials {
   color: $primary-white-color;
   background-color: rgba(255, 255, 255, 0.1);
-
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-social-links .footer-icon {
+
+.socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-socials .footer-icon,
+.socials-icon .icon {
   fill: currentColor;
 
   width: 20px;
   height: 20px;
-}
-
-.social-links-icon .icon {
-  fill: currentColor;
-
-  width: 20px;
-  height: 20px;
-}
-
-.footer-social-links:hover,
-.footer-social-links:focus {
-  color: $primary-white-color;
-  background-color: $accent-color;
 }

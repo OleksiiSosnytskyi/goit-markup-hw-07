@@ -1,33 +1,13 @@
-.checkbox-icon {
-  vertical-align: middle;
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  top: 0;
-  left: 0;
-  border-radius: 2px;
-  border: 2px solid $title-text-color;
-}
-
-.checkbox:checked ~ .checkbox-icon {
-  border-color: $accent-color;
-  background-color: $accent-color;
-  background-image: url(../images/check.svg);
-  background-size: contain;
-  background-origin: border-box;
+.form-field {
+  position: relative;
+  margin-bottom: 28px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-field:focus-within .form-label,
 .form-input:not(:placeholder-shown) ~ .form-label {
   color: $accent-color;
   transform: translate(-23px, calc(-100% - 24px));
   font-size: 12px;
-}
-
-.form-icon {
-  position: absolute;
-  top: 50%;
-  left: 19px;
-  transform: translateY(-50%);
 }
 
 .form-field:focus-within .form-icon {
@@ -44,7 +24,6 @@
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
 
@@ -62,14 +41,8 @@ label a {
   margin-bottom: 30px;
 }
 
-.form-field {
-  position: relative;
-  margin-bottom: 28px;
-}
-
 .form-label {
   font-weight: normal;
-  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.01em;
   color: $primary-text-color;
@@ -78,6 +51,13 @@ label a {
   left: 42px;
   transform: translateY(-50%);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
 }
 
 textarea {
@@ -94,21 +74,13 @@ textarea {
 
 .textarea {
   position: relative;
-}
 
-.textarea-title {
-  position: absolute;
-  top: 12px;
-  left: 16px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.textarea:focus-within > textarea {
-  outline-color: $accent-color;
-}
-
-.textarea:focus-within > .textarea-title {
-  opacity: 0;
+  &:focus-within > textarea {
+    outline-color: $accent-color;
+  }
+  &:focus-within > .textarea-title {
+    opacity: 0;
+  }
 }
 
 .checkbox {
@@ -117,6 +89,25 @@ textarea {
   appearance: none;
 
   position: absolute;
+
+  &:checked ~ .checkbox-icon {
+    border-color: $accent-color;
+    background-color: $accent-color;
+    background-image: url(../images/check.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
+}
+
+.checkbox-icon {
+  vertical-align: middle;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 0;
+  border-radius: 2px;
+  border: 2px solid $title-text-color;
 }
 
 .form {

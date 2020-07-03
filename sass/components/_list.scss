@@ -1,7 +1,7 @@
-.advantages-list {
-  display: flex;
-  flex-wrap: wrap;
+.section-list {
+  @extend %flexbox;
 }
+
 .advantages-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -9,9 +9,6 @@
 .advantages-item {
   justify-content: space-between;
   width: 270px;
-}
-.directions-item {
-  position: relative;
 }
 
 .directions-item > h3 {
@@ -31,38 +28,48 @@
   bottom: 0;
 }
 
-.directions-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .team-info {
   margin-bottom: 24px;
   margin-top: 30px;
 }
+.directions-item {
+  position: relative;
 
-.directions-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
+
 .team-item {
   background-color: $primary-white-color;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.team-item:not(:last-child) {
-  margin-right: 30px;
-}
-.clients-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
+
+// .directions-list {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+// .team-list {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+// .advantages-list {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+// .clients-list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+// }
